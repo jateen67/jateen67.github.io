@@ -14,7 +14,7 @@ export default function Projects() {
             >
               <img
                 className="actual-project-image"
-                src="src/assets/social media.png"
+                src="/social media.png"
                 alt="social media site"
               />
             </div>
@@ -93,7 +93,7 @@ export default function Projects() {
             <div className="project-pic">
               <img
                 className="actual-project-image-2"
-                src="src/assets/album.png"
+                src="/album.png"
                 alt="music album pic"
                 data-aos="fade-right"
                 data-aos-delay="500"
@@ -110,7 +110,7 @@ export default function Projects() {
             >
               <img
                 className="sim-gif"
-                src="src/assets/physics.gif"
+                src="/physics.gif"
                 alt="physics sim pic"
               />
             </div>
@@ -186,7 +186,7 @@ export default function Projects() {
             >
               <img
                 className="actual-project-image-2"
-                src="src/assets/game.gif"
+                src="/game.gif"
                 alt="video game deals pic"
               />
             </div>

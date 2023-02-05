@@ -37,7 +37,7 @@ export default function Header() {
           data-aos="fade-up"
           data-aos-delay="1000"
           className="montreal"
-          src="src/assets/montreal.jpg"
+          src="/montreal.jpg"
           alt="montreal"
         />
       </div>
