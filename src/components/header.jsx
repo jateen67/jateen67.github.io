@@ -41,7 +41,6 @@ export default function Header() {
           alt="montreal"
         />
       </div>
-      <div class="scroll-down"></div>
     </div>
   );
 }
