@@ -8,33 +8,6 @@ export default function Footer() {
       </div>
       <div className="temp"></div>
       <div className="actual-footer">
-        <div className="site-links">
-          <p>Site</p>
-          <a
-            className="link"
-            onClick={() => {
-              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-            }}
-          >
-            Home
-          </a>
-          <a
-            className="link"
-            onClick={() => {
-              window.scrollTo({ top: 731, left: 0, behavior: "smooth" });
-            }}
-          >
-            Tools
-          </a>
-          <a
-            className="link"
-            onClick={() => {
-              window.scrollTo({ top: 1684, left: 0, behavior: "smooth" });
-            }}
-          >
-            Projects
-          </a>
-        </div>
         <div className="contact-links">
           <p>Links</p>
           <a
@@ -47,7 +20,7 @@ export default function Footer() {
           <a
             className="link"
             target="_blank"
-            href="https://www.linkedin.com/in/jatin-kalsi-3b5997240/"
+            href="https://www.linkedin.com/in/jatin-kalsi/"
           >
             LinkedIn
           </a>

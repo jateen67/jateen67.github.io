@@ -18,7 +18,7 @@ export default function Header() {
             <p className="top-para" data-aos="fade-up" data-aos-delay="500">
               I'm a university computer science student based in Montreal,
               Quebec, Canada. My aim is to learn more about the world of
-              software engineering and development
+              software engineering and development.
             </p>
           </div>
         </div>

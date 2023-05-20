@@ -18,7 +18,7 @@ export default function Projects() {
                 alt="social media site"
               />
             </div>
-            <div className="project-description">
+            <div className="project-description project-description-blue">
               <h2
                 className="project-title"
                 data-aos="fade-left"
@@ -31,8 +31,7 @@ export default function Projects() {
                 data-aos="fade-left"
                 data-aos-delay="700"
               >
-                Social media platform inspired by Reddit and Twitter<br></br>
-                Built using Ruby on Rails, PostgreSQL, Bootstrap
+                Social media platform inspired by Reddit
               </div>
               <div className="project-buttons">
                 <a
@@ -40,7 +39,7 @@ export default function Projects() {
                   href="https://jatins-social-media.herokuapp.com/"
                   target="_blank"
                 >
-                  <span>DEMO</span>
+                  <span>SITE</span>
                 </a>
                 <a
                   className="cta cta2"
@@ -68,10 +67,7 @@ export default function Projects() {
                 data-aos="fade-right"
                 data-aos-delay="700"
               >
-                Website used for storing, viewing, and editing music albums
-                <br></br>
-                Built using React.js, Express.js, .NET Core, SQL Server,
-                Bootstrap
+                Store and view all your favourite music albums
               </div>
               <div className="project-buttons">
                 <a
@@ -79,7 +75,7 @@ export default function Projects() {
                   href="https://albumdatabasefrontend.azurewebsites.net/"
                   target="_blank"
                 >
-                  <span>DEMO</span>
+                  <span>SITE</span>
                 </a>
                 <a
                   className="cta cta2"
@@ -114,7 +110,7 @@ export default function Projects() {
                 alt="physics sim pic"
               />
             </div>
-            <div className="project-description">
+            <div className="project-description project-description-blue">
               <h2
                 className="project-title"
                 data-aos="fade-left"
@@ -128,8 +124,6 @@ export default function Projects() {
                 data-aos-delay="700"
               >
                 Desktop application consisting of two physics simulations
-                <br></br>
-                Built using JavaFX
               </div>
               <div className="project-buttons">
                 <a
@@ -143,7 +137,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="last-project" data-aos="slide-right">
+        <div className="project-2" data-aos="slide-right">
           <div className="project-contents">
             <div className="project-description">
               <h2
@@ -158,9 +152,7 @@ export default function Projects() {
                 data-aos="fade-right"
                 data-aos-delay="700"
               >
-                Website used for finding the cheapest online deals in PC gaming
-                <br></br>
-                Built using React.js, TypeScript
+                Find the cheapest online deals in PC gaming
               </div>
               <div className="project-buttons">
                 <a
@@ -168,7 +160,7 @@ export default function Projects() {
                   href="https://gamedealsapi.web.app/"
                   target="_blank"
                 >
-                  <span>DEMO</span>
+                  <span>SITE</span>
                 </a>
                 <a
                   className="cta cta2"
@@ -192,8 +184,96 @@ export default function Projects() {
             </div>
           </div>
         </div>
+        <div className="project" data-aos="slide-left">
+          <div className="project-contents">
+            <div
+              className="project-pic"
+              data-aos="fade-left"
+              data-aos-delay="500"
+            >
+              <img
+                className="actual-project-image"
+                src="trading.png"
+                alt="crypto pic"
+              />
+            </div>
+            <div className="project-description project-description-blue">
+              <h2
+                className="project-title"
+                data-aos="fade-left"
+                data-aos-delay="600"
+              >
+                Binance Trading Bot
+              </h2>
+              <div
+                className="project-text"
+                data-aos="fade-left"
+                data-aos-delay="700"
+              >
+                Bot that trades Dogecoin by analyzing Elon Musk's tweets
+              </div>
+              <div className="project-buttons">
+                <a
+                  className="cta cta2"
+                  href="https://github.com/jateen67/tradingbot"
+                  target="_blank"
+                >
+                  <span>CODE</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="last-project" data-aos="slide-right">
+          <div className="project-contents">
+            <div className="project-description">
+              <h2
+                className="project-title"
+                data-aos="fade-right"
+                data-aos-delay="600"
+              >
+                AI Crypto Recommender
+              </h2>
+              <div
+                className="project-text"
+                data-aos="fade-right"
+                data-aos-delay="700"
+              >
+                Machine learning model trained to recommend the best crypto (IN
+                PROGRESS...)
+              </div>
+              <div className="project-buttons">
+                <a
+                  className="cta"
+                  href="https://cryptorecommender.web.app/"
+                  target="_blank"
+                >
+                  <span>SITE</span>
+                </a>
+                <a
+                  className="cta cta2"
+                  href="https://github.com/jateen67/crypto"
+                  target="_blank"
+                >
+                  <span>CODE</span>
+                </a>
+              </div>
+            </div>
+            <div
+              className="project-pic"
+              data-aos="fade-right"
+              data-aos-delay="500"
+            >
+              <img
+                className="actual-project-image-2"
+                src="crypto-page.png"
+                alt="crypto pic"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-      <h1 className="coming-soon">More projects coming soon...</h1>
+      <h1 className="coming-soon">More coming soon...</h1>
     </div>
   );
 }
