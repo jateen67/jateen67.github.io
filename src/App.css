@@ -293,15 +293,6 @@ span {
   }
 }
 
-@media (max-width: 400px) {
-  svg {
-    height: 30px;
-  }
-  .tech-name {
-    font-size: 0.6rem;
-  }
-}
-
 .tools-container {
   width: 100%;
   margin: 0 auto;
@@ -342,7 +333,7 @@ span {
 .tools-grid-item {
   text-align: center;
   box-sizing: border-box;
-  width: 20%;
+  width: 33%;
 }
 
 .projects-container {

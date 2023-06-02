@@ -193,8 +193,8 @@ export default function Projects() {
             >
               <img
                 className="actual-project-image"
-                src="trading.png"
-                alt="crypto pic"
+                src="microservice.png"
+                alt="microservice pic"
               />
             </div>
             <div className="project-description project-description-blue">
@@ -203,19 +203,19 @@ export default function Projects() {
                 data-aos="fade-left"
                 data-aos-delay="600"
               >
-                Binance Trading Bot
+                Distributed System
               </h2>
               <div
                 className="project-text"
                 data-aos="fade-left"
                 data-aos-delay="700"
               >
-                Bot that trades Dogecoin by analyzing Elon Musk's tweets
+                Event-driven app built with microservice architecture
               </div>
               <div className="project-buttons">
                 <a
                   className="cta cta2"
-                  href="https://github.com/jateen67/tradingbot"
+                  href="https://github.com/jateen67/gomicroservices"
                   target="_blank"
                 >
                   <span>CODE</span>
@@ -239,8 +239,7 @@ export default function Projects() {
                 data-aos="fade-right"
                 data-aos-delay="700"
               >
-                Machine learning model trained to recommend the best crypto (IN
-                PROGRESS...)
+                Machine learning model that recommends crypto
               </div>
               <div className="project-buttons">
                 <a
