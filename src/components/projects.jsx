@@ -210,7 +210,7 @@ export default function Projects() {
                 data-aos="fade-left"
                 data-aos-delay="700"
               >
-                Event-driven app built with microservice architecture
+                Scalable app built with microservice architecture
               </div>
               <div className="project-buttons">
                 <a
