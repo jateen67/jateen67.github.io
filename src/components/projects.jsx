@@ -53,26 +53,19 @@ export default function Projects() {
                 data-aos="fade-right"
                 data-aos-delay="600"
               >
-                AI Stock Recommender
+                Good News Finder Neural Network
               </h2>
               <div
                 className="project-text"
                 data-aos="fade-right"
                 data-aos-delay="700"
               >
-                Machine learning model that recommends stocks
+                AI model that aggregates good news online
               </div>
               <div className="project-buttons">
                 <a
-                  className="cta"
-                  href="https://aistockrecommender.web.app/"
-                  target="_blank"
-                >
-                  <span>SITE</span>
-                </a>
-                <a
                   className="cta cta2"
-                  href="https://github.com/jateen67/stock"
+                  href="https://github.com/jateen67/news"
                   target="_blank"
                 >
                   <span>CODE</span>
@@ -86,8 +79,8 @@ export default function Projects() {
             >
               <img
                 className="actual-project-image-2"
-                src="stock.png"
-                alt="stock pic"
+                src="neuralnetwork.png"
+                alt="neural network pic"
               />
             </div>
           </div>
