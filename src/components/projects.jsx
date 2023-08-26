@@ -36,7 +36,7 @@ export default function Projects() {
               <div className="project-buttons">
                 <a
                   className="cta cta2"
-                  href="https://github.com/jateen67/gomicroservices"
+                  href="https://github.com/jateen67/microservice"
                   target="_blank"
                 >
                   <span>CODE</span>
