@@ -115,13 +115,6 @@ export default function Projects() {
               </div>
               <div className="project-buttons">
                 <a
-                  className="cta"
-                  href="https://jatins-social-media.herokuapp.com/"
-                  target="_blank"
-                >
-                  <span>SITE</span>
-                </a>
-                <a
                   className="cta cta2"
                   href="https://github.com/jateen67/socialmediasite"
                   target="_blank"
