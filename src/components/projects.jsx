@@ -14,8 +14,8 @@ export default function Projects() {
             >
               <img
                 className="actual-project-image"
-                src="microservice.png"
-                alt="microservice pic"
+                src="opencourse.png"
+                alt="open course pic"
               />
             </div>
             <div className="project-description project-description-blue">
@@ -24,19 +24,26 @@ export default function Projects() {
                 data-aos="fade-left"
                 data-aos-delay="600"
               >
-                Distributed System
+                Class Availability Notifier
               </h2>
               <div
                 className="project-text"
                 data-aos="fade-left"
                 data-aos-delay="700"
               >
-                Scalable app built with microservice architecture
+                Sign up for SMS alerts when course seats open
               </div>
               <div className="project-buttons">
                 <a
+                  className="cta"
+                  href="https://open-course.ca"
+                  target="_blank"
+                >
+                  <span>SITE</span>
+                </a>
+                <a
                   className="cta cta2"
-                  href="https://github.com/jateen67/microservice"
+                  href="https://github.com/jateen67/open-course"
                   target="_blank"
                 >
                   <span>CODE</span>
@@ -94,8 +101,8 @@ export default function Projects() {
             >
               <img
                 className="actual-project-image"
-                src="social media.png"
-                alt="social media site"
+                src="microservice.png"
+                alt="microservice pic"
               />
             </div>
             <div className="project-description project-description-blue">
@@ -104,19 +111,19 @@ export default function Projects() {
                 data-aos="fade-left"
                 data-aos-delay="600"
               >
-                Social Media Site
+                Distributed System
               </h2>
               <div
                 className="project-text"
                 data-aos="fade-left"
                 data-aos-delay="700"
               >
-                Join communities and share posts with others
+                Scalable app built with microservice architecture
               </div>
               <div className="project-buttons">
                 <a
                   className="cta cta2"
-                  href="https://github.com/jateen67/socialmediasite"
+                  href="https://github.com/jateen67/microservice"
                   target="_blank"
                 >
                   <span>CODE</span>
@@ -145,7 +152,7 @@ export default function Projects() {
               <div className="project-buttons">
                 <a
                   className="cta"
-                  href="https://tsp-visualizer.web.app/"
+                  href="https://tsp-visualizer.web.app"
                   target="_blank"
                 >
                   <span>SITE</span>
@@ -209,44 +216,6 @@ export default function Projects() {
                   <span>CODE</span>
                 </a>
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="last-project" data-aos="slide-right">
-          <div className="project-contents">
-            <div className="project-description">
-              <h2
-                className="project-title"
-                data-aos="fade-right"
-                data-aos-delay="600"
-              >
-                Music Album Database
-              </h2>
-              <div
-                className="project-text"
-                data-aos="fade-right"
-                data-aos-delay="700"
-              >
-                Store and view all your favourite music albums
-              </div>
-              <div className="project-buttons">
-                <a
-                  className="cta cta2"
-                  href="https://github.com/jateen67/albumdbcsharp"
-                  target="_blank"
-                >
-                  <span>CODE</span>
-                </a>
-              </div>
-            </div>
-            <div className="project-pic">
-              <img
-                className="actual-project-image-2"
-                src="album.png"
-                alt="music album pic"
-                data-aos="fade-right"
-                data-aos-delay="500"
-              />
             </div>
           </div>
         </div>

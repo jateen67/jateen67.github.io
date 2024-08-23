@@ -16,8 +16,8 @@ export default function Header() {
           </h1>
           <div className="header-small-text">
             <p className="top-para" data-aos="fade-up" data-aos-delay="500">
-              I'm a university computer science student based in Montreal,
-              Quebec, Canada. My aim is to learn more about the world of
+              I'm a university computer science student based in Montréal,
+              Québec, Canada. My aim is to learn more about the world of
               software engineering and development.
             </p>
           </div>
