@@ -34,16 +34,16 @@ export default function Projects() {
                 Sign up for SMS alerts when course seats open
               </div>
               <div className="project-buttons">
-                <a
+                {/* <a
                   className="cta"
                   href="https://open-course.ca"
                   target="_blank"
                 >
                   <span>SITE</span>
-                </a>
+                </a> */}
                 <a
                   className="cta cta2"
-                  href="https://github.com/jateen67/open-course"
+                  href="https://github.com/jateen67/conualerts"
                   target="_blank"
                 >
                   <span>CODE</span>
