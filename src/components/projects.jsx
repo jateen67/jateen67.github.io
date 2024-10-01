@@ -43,7 +43,7 @@ export default function Projects() {
                 </a> */}
                 <a
                   className="cta cta2"
-                  href="https://github.com/jateen67/conualerts"
+                  href="https://github.com/jateen67/open-course"
                   target="_blank"
                 >
                   <span>CODE</span>
