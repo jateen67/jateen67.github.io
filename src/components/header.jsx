@@ -16,13 +16,13 @@ export default function Header() {
           </h1>
           <div className="header-small-text">
             <p className="top-para" data-aos="fade-up" data-aos-delay="500">
-              I'm a university computer science student based in Montréal,
-              Québec, Canada. My aim is to learn more about the world of
-              software engineering and development.
+              I'm a university computer science student based in Canada. My aim
+              is to learn more about the world of software engineering and
+              development.
             </p>
           </div>
         </div>
-        <div className="header-button-area">
+        {/* <div className="header-button-area">
           <a
             className="cta cta2"
             target="_blank"
@@ -30,7 +30,7 @@ export default function Header() {
           >
             <span>VIEW MY R&Eacute;SUM&Eacute;</span>
           </a>
-        </div>
+        </div> */}
       </div>
       <div className="header-right-side">
         <img
