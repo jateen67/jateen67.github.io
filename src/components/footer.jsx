@@ -31,13 +31,13 @@ export default function Footer() {
           >
             Email
           </a>
-          <a
+          {/* <a
             className="link"
             target="_blank"
             href="https://drive.google.com/file/d/1wqKa06entq4IyPQCKKSBfA8VyrjfaduT/view?usp=share_link"
           >
             R&eacute;sum&eacute;
-          </a>
+          </a> */}
         </div>
         <div className="copy">
           <p>&copy; Jatin Kalsi {new Date().getFullYear()}</p>
