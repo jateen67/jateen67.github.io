@@ -199,14 +199,42 @@ nav.primary-nav li.nav-controls {
 .experience-header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.75rem;
+}
+
+.experience-header-main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.experience-logo {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  border-radius: 8px;
+  padding: 4px;
+  flex-shrink: 0;
+}
+
+:root[data-theme="dark"] .experience-logo {
+  background-color: #ffffff;
 }
 
 .experience-role {
   margin: 0;
   font-size: 1.4rem;
+}
+
+@media (max-width: 600px) {
+  .experience-logo {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .experience-company {

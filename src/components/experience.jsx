@@ -16,26 +16,36 @@ export default function Experience() {
         {t.experience.heading}
       </h1>
       <div className="experience-list">
-        {t.experience.items.map((item, i) => (
-          <div
-            key={`${item.company}-${i}`}
-            className={`experience-item${i % 2 === 1 ? " alt" : ""}`}
-            data-aos="fade-up"
-            data-aos-delay={i * 100}
-          >
-            <div className="experience-header">
-              <h2 className="experience-role">
-                {item.role} <span className="experience-company">@ {item.company}</span>
-              </h2>
-              <span className="experience-dates">{item.dates}</span>
+        {t.experience.items.map((item, i) => {
+          const logoSrc = `company${t.experience.items.length - i}.png`;
+          return (
+            <div
+              key={`${item.company}-${i}`}
+              className={`experience-item${i % 2 === 1 ? " alt" : ""}`}
+              data-aos="fade-up"
+              data-aos-delay={i * 100}
+            >
+              <div className="experience-header">
+                <div className="experience-header-main">
+                  <img
+                    className="experience-logo"
+                    src={logoSrc}
+                    alt={`${item.company} logo`}
+                  />
+                  <h2 className="experience-role">
+                    {item.role} <span className="experience-company">@ {item.company}</span>
+                  </h2>
+                </div>
+                <span className="experience-dates">{item.dates}</span>
+              </div>
+              <ul className="experience-bullets">
+                {item.bullets.map((b, j) => (
+                  <li key={j}>{b}</li>
+                ))}
+              </ul>
             </div>
-            <ul className="experience-bullets">
-              {item.bullets.map((b, j) => (
-                <li key={j}>{b}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
