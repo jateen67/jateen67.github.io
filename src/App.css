@@ -1,0 +1,718 @@
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url(./fonts/Montserrat-Regular.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url(./fonts/Montserrat-Bold.ttf) format("opentype");
+  font-weight: bold;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1rem;
+}
+
+.home {
+  float: left;
+  font-weight: bolder;
+  padding: 1rem 0;
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 6rem;
+  max-width: 1200px;
+  padding-bottom: 6rem;
+  border-bottom: 1px solid #424242;
+}
+
+.header-left-side {
+  width: 50%;
+}
+
+.header-right-side {
+  width: 50%;
+}
+
+@media (max-width: 690px) {
+  .header-left-side {
+    width: 70%;
+  }
+  .header-right-side {
+    width: 30%;
+  }
+}
+
+@media (max-width: 420px) {
+  .header-left-side {
+    width: 80%;
+  }
+  .header-right-side {
+    width: 20%;
+  }
+}
+
+@media (max-width: 370px) {
+  .header-left-side {
+    width: 90%;
+  }
+  .header-right-side {
+    width: 10%;
+  }
+}
+
+.header-button-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+  margin-right: 2rem;
+}
+
+@media (max-width: 1000px) {
+  span {
+    font-size: 0.75rem;
+  }
+
+  .header-button-area {
+    margin-top: 35px;
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 810px) {
+  span {
+    font-size: 0.6rem;
+  }
+
+  .header-button-area {
+    margin-top: 35px;
+    padding-left: 2rem;
+  }
+}
+
+.project-button {
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  border: 5px solid #0092ff;
+  color: #0092ff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.project-button {
+  transition-duration: 0.4s;
+}
+
+.project-button:hover {
+  background-color: #0092ff;
+  color: white;
+}
+
+.cta {
+  display: flex;
+  padding: 10px 45px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background: #0092ff;
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+  cursor: pointer;
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #6225e6;
+}
+
+.cta span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.cta:hover span:nth-child(2) {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+span {
+  transform: skewX(15deg);
+}
+
+.cta2 {
+  background: #6225e6;
+}
+
+.cta2:hover {
+  box-shadow: 10px 10px 0 #0092ff;
+}
+
+.montreal {
+  display: flex;
+  margin: 0 auto;
+  width: 400px;
+  height: 460px;
+  border-radius: 1%;
+  box-shadow: 40px 50px 0 #0092ff;
+}
+
+@media (max-width: 1000px) {
+  .montreal {
+    width: 350px;
+    height: 402.5px;
+  }
+}
+
+@media (max-width: 930px) {
+  .montreal {
+    width: 300px;
+    height: 345px;
+  }
+}
+
+@media (max-width: 810px) {
+  .montreal {
+    width: 250px;
+    height: 287.5px;
+  }
+}
+
+@media (max-width: 690px) {
+  .montreal {
+    visibility: hidden;
+  }
+}
+
+.im-jatin {
+  text-align: left;
+  font-size: 4rem;
+  padding-top: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .im-jatin {
+    font-size: 3.5rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 930px) {
+  .im-jatin {
+    font-size: 3rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .im-jatin {
+    font-size: 2.5rem;
+    padding-left: 2rem;
+  }
+}
+
+.top-para {
+  text-align: left;
+}
+
+@media (max-width: 1000px) {
+  .top-para {
+    padding-left: 2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 930px) {
+  .top-para {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .top-para {
+    font-size: 0.7rem;
+  }
+}
+
+.my-tools {
+  text-align: center;
+  font-size: 3rem;
+}
+
+@media (max-width: 1000px) {
+  .my-tools {
+    font-size: 2.5rem;
+  }
+  svg {
+    height: 45px;
+  }
+  .tech-name {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 930px) {
+  .my-tools {
+    font-size: 2rem;
+  }
+  svg {
+    height: 40px;
+  }
+  .tech-name {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .my-tools {
+    font-size: 1.5rem;
+  }
+  svg {
+    height: 35px;
+  }
+  .tech-name {
+    font-size: 0.7rem;
+  }
+}
+
+.tools-container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #424242;
+}
+
+.tech-logo {
+  width: 3rem;
+  height: auto;
+}
+
+.tools-label {
+  color: white;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.grid-item {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.tools-flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tools-grid-item {
+  text-align: center;
+  box-sizing: border-box;
+  width: 33%;
+}
+
+.projects-container {
+  padding-top: 3rem;
+}
+
+.my-projects {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.blue-block {
+  background-color: #0092ff;
+}
+
+.temp {
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #424242;
+}
+
+.interested {
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 2.5rem;
+  padding: 3rem 0;
+}
+
+@media (max-width: 700px) {
+  .interested {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .interested {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .interested {
+    font-size: 1.25rem;
+  }
+}
+
+.footer-container {
+  padding-bottom: 3rem;
+}
+
+.actual-footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;
+}
+
+@media (max-width: 700px) {
+  .actual-footer {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .actual-footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .actual-footer {
+    font-size: 0.7rem;
+  }
+}
+
+.site-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.home {
+  cursor: pointer;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding: 5px 0;
+}
+
+.link::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #0092ff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project {
+  background-color: #0092ff;
+  margin-bottom: 3rem;
+}
+
+.project-2 {
+  background-color: #6225e6;
+  margin-bottom: 3rem;
+}
+
+.last-project {
+  background-color: #6225e6;
+  margin-bottom: 3rem;
+}
+
+.project-pic {
+  width: 50%;
+}
+
+.project-description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.project-buttons {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  bottom: 0;
+}
+
+.project-contents {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 3rem 0;
+}
+
+@media (max-width: 1300px) {
+  .project-contents {
+    width: 90%;
+  }
+}
+
+.actual-project-image {
+  width: 30rem;
+  box-shadow: -40px 50px 0 #6225e6;
+}
+
+.actual-project-image-2 {
+  width: 30rem;
+  box-shadow: 40px 50px 0 #0092ff;
+}
+
+@media (max-width: 1250px) {
+  .actual-project-image {
+    width: 25rem;
+  }
+  .actual-project-image-2 {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .actual-project-image {
+    width: 20rem;
+  }
+
+  .actual-project-image-2 {
+    width: 20rem;
+  }
+
+  .sim-gif {
+    width: 20rem;
+    height: 226px;
+  }
+}
+
+.project-title {
+  text-align: left;
+}
+
+.project-text {
+  line-height: 3.5rem;
+}
+
+@media (max-width: 1200px) {
+  .project-text {
+    line-height: 3rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .project-text {
+    font-size: 0.9rem;
+    line-height: 2.5rem;
+  }
+}
+
+.my-projects {
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 1000px) {
+  .my-projects {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 930px) {
+  .my-projects {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .my-projects {
+    font-size: 1.5rem;
+  }
+}
+
+.sim-gif {
+  height: 282.5px;
+  box-shadow: -40px 50px 0 #6225e6;
+}
+
+.coming-soon {
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+@media (max-width: 1000px) {
+  .coming-soon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 930px) {
+  .coming-soon {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .coming-soon {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .project-text {
+    line-height: 1.5rem;
+  }
+
+  .project-title {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 910px) {
+  .project-title {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 900px) {
+  .project-pic {
+    width: 60%;
+  }
+  .project-description {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .sim-gif {
+    width: 20rem;
+    height: 226px;
+  }
+}
+
+@media (max-width: 900px) {
+  .project-description-blue {
+    padding-left: 3rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .project-contents {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+  .project-pic {
+    width: 100%;
+  }
+  .project-description {
+    margin: 0 auto;
+    margin-top: -3rem;
+  }
+  .project-title {
+    text-align: center;
+  }
+  .project-buttons {
+    width: 100%;
+    bottom: -40px;
+  }
+  .project-description-blue {
+    padding-left: 0;
+  }
+  .project-text {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .actual-project-image {
+    width: 17rem;
+    box-shadow: -20px 30px 0 #6225e6;
+  }
+  .actual-project-image-2 {
+    width: 17rem;
+    box-shadow: 20px 30px 0 #0092ff;
+  }
+  .project-title {
+    font-size: 1.4rem;
+  }
+  .project-text {
+    font-size: 0.8rem;
+  }
+  .sim-gif {
+    width: 17rem;
+    height: 192.1px;
+    box-shadow: -20px 30px 0 #6225e6;
+  }
+}
+
+@media (max-width: 400px) {
+  .actual-project-image {
+    width: 17rem;
+    box-shadow: -20px 30px 0 #6225e6;
+  }
+  .actual-project-image-2 {
+    width: 17rem;
+    box-shadow: 20px 30px 0 #0092ff;
+  }
+  .project-title {
+    font-size: 1.2rem;
+  }
+}
