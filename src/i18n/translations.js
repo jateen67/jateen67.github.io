@@ -15,7 +15,7 @@ export const translations = {
       description:
         "I'm a software engineer based in Montreal.",
       imageAlt: "Photo of the Montreal skyline at dusk",
-      currently: "Currently @ Smartbills Technologies",
+      currently: "Currently @ Smartbills",
       scrollHint: "Scroll to experience",
     },
     tools: {
@@ -122,7 +122,7 @@ export const translations = {
       description:
         "Je suis ingénieur logiciel basé à Montréal.",
       imageAlt: "Photo de la skyline de Montréal au crépuscule",
-      currently: "Actuellement @ Smartbills Technologies",
+      currently: "Actuellement @ Smartbills",
       scrollHint: "Faire défiler vers l'expérience",
     },
     tools: {
