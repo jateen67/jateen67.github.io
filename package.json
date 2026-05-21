@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d dist -b gh-pages"
+    "deploy": "yarn build && gh-pages -d dist -b gh-pages"
   },
   "dependencies": {
     "aos": "^2.3.4",
