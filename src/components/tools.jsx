@@ -1,19 +1,22 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Tools() {
+  const { t } = useLanguage();
+
   useEffect(() => {
     Aos.init({ duration: 1000, once: true });
   }, []);
 
   return (
-    <div className="tools-container">
+    <div className="tools-container" id="tools">
       <h1 className="my-tools" data-aos="fade-up">
-        Tools & Technologies
+        {t.tools.heading}
       </h1>
       <p className="tools-label" data-aos="fade-right" data-aos-delay="100">
-        Programming
+        {t.tools.programming}
       </p>
       <div className="tools-flex-container">
         <div className="grid-item tools-grid-item" data-aos="fade-right">
@@ -170,7 +173,7 @@ export default function Tools() {
         </div>
       </div>
       <p className="tools-label" data-aos="fade-right" data-aos-delay="200">
-        Web & Databases
+        {t.tools.webDatabases}
       </p>
       <div className="tools-flex-container">
         <div className="grid-item tools-grid-item" data-aos="fade-right">
@@ -374,7 +377,7 @@ export default function Tools() {
         </div>
       </div>
       <p className="tools-label" data-aos="fade-right">
-        Frameworks/Other
+        {t.tools.frameworks}
       </p>
       <div className="tools-flex-container">
         <div className="grid-item tools-grid-item" data-aos="fade-right">

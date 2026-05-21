@@ -1,8 +1,13 @@
+import { useLanguage } from "../contexts/LanguageContext";
+
 export default function Projects() {
+  const { t } = useLanguage();
+  const p = t.projects.items;
+
   return (
-    <div className="projects-container">
+    <div className="projects-container" id="projects">
       <h1 className="my-projects" data-aos="fade-up">
-        Projects
+        {t.projects.heading}
       </h1>
       <div className="actual-projects">
         <div className="project" data-aos="slide-left">
@@ -24,14 +29,14 @@ export default function Projects() {
                 data-aos="fade-left"
                 data-aos-delay="600"
               >
-                Class Availability Notifier
+                {p.classAvailability.title}
               </h2>
               <div
                 className="project-text"
                 data-aos="fade-left"
                 data-aos-delay="700"
               >
-                Sign up for SMS alerts when course seats open
+                {p.classAvailability.description}
               </div>
               <div className="project-buttons">
                 {/* <a
@@ -39,14 +44,14 @@ export default function Projects() {
                   href="https://open-course.ca"
                   target="_blank"
                 >
-                  <span>SITE</span>
+                  <span>{t.projects.site}</span>
                 </a> */}
                 <a
                   className="cta cta2"
                   href="https://github.com/jateen67/open-course"
                   target="_blank"
                 >
-                  <span>CODE</span>
+                  <span>{t.projects.code}</span>
                 </a>
               </div>
             </div>
@@ -60,14 +65,14 @@ export default function Projects() {
                 data-aos="fade-right"
                 data-aos-delay="600"
               >
-                Good News Finder Neural Network
+                {p.goodNews.title}
               </h2>
               <div
                 className="project-text"
                 data-aos="fade-right"
                 data-aos-delay="700"
               >
-                AI model that aggregates good news online
+                {p.goodNews.description}
               </div>
               <div className="project-buttons">
                 <a
@@ -75,7 +80,7 @@ export default function Projects() {
                   href="https://github.com/jateen67/news"
                   target="_blank"
                 >
-                  <span>CODE</span>
+                  <span>{t.projects.code}</span>
                 </a>
               </div>
             </div>
@@ -111,14 +116,14 @@ export default function Projects() {
                 data-aos="fade-left"
                 data-aos-delay="600"
               >
-                Distributed System
+                {p.distributed.title}
               </h2>
               <div
                 className="project-text"
                 data-aos="fade-left"
                 data-aos-delay="700"
               >
-                Scalable app built with microservice architecture
+                {p.distributed.description}
               </div>
               <div className="project-buttons">
                 <a
@@ -126,7 +131,7 @@ export default function Projects() {
                   href="https://github.com/jateen67/microservice"
                   target="_blank"
                 >
-                  <span>CODE</span>
+                  <span>{t.projects.code}</span>
                 </a>
               </div>
             </div>
@@ -140,14 +145,14 @@ export default function Projects() {
                 data-aos="fade-right"
                 data-aos-delay="600"
               >
-                Travelling Salesman Problem Visualizer
+                {p.tsp.title}
               </h2>
               <div
                 className="project-text"
                 data-aos="fade-right"
                 data-aos-delay="700"
               >
-                Visualize and learn about this infamous problem
+                {p.tsp.description}
               </div>
               <div className="project-buttons">
                 <a
@@ -155,14 +160,14 @@ export default function Projects() {
                   href="https://tsp-visualizer.web.app"
                   target="_blank"
                 >
-                  <span>SITE</span>
+                  <span>{t.projects.site}</span>
                 </a>
                 <a
                   className="cta cta2"
                   href="https://github.com/jateen67/tsp"
                   target="_blank"
                 >
-                  <span>CODE</span>
+                  <span>{t.projects.code}</span>
                 </a>
               </div>
             </div>
@@ -198,14 +203,14 @@ export default function Projects() {
                 data-aos="fade-left"
                 data-aos-delay="600"
               >
-                Physics Simulations
+                {p.physics.title}
               </h2>
               <div
                 className="project-text"
                 data-aos="fade-left"
                 data-aos-delay="700"
               >
-                Desktop application consisting of two physics simulations
+                {p.physics.description}
               </div>
               <div className="project-buttons">
                 <a
@@ -213,14 +218,14 @@ export default function Projects() {
                   href="https://github.com/jateen67/vanierintegrativeproject"
                   target="_blank"
                 >
-                  <span>CODE</span>
+                  <span>{t.projects.code}</span>
                 </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <h1 className="coming-soon">More coming soon...</h1>
+      <h1 className="coming-soon">{t.projects.comingSoon}</h1>
     </div>
   );
 }

@@ -1,35 +1,39 @@
+import { useLanguage } from "../contexts/LanguageContext";
+
 export default function Footer() {
+  const { t } = useLanguage();
+
   return (
-    <div className="footer-container">
+    <div className="footer-container" id="contact">
       <div className="blue-block" data-aos="slide-right">
         <h1 className="interested" data-aos="fade" data-aos-delay="1000">
-          Interested in connecting?<br></br>Find my information below!
+          {t.footer.interested}<br></br>{t.footer.findInfo}
         </h1>
       </div>
       <div className="temp"></div>
       <div className="actual-footer">
         <div className="contact-links">
-          <p>Links</p>
+          <p>{t.footer.links}</p>
           <a
             className="link"
             target="_blank"
             href="https://github.com/jateen67"
           >
-            GitHub
+            {t.footer.github}
           </a>
           <a
             className="link"
             target="_blank"
             href="https://www.linkedin.com/in/jatin-kalsi/"
           >
-            LinkedIn
+            {t.footer.linkedin}
           </a>
           <a
             className="link"
             target="_blank"
             href="mailto:kalsijatin67@icloud.com"
           >
-            Email
+            {t.footer.email}
           </a>
           {/* <a
             className="link"

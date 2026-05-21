@@ -1,8 +1,11 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Header() {
+  const { t } = useLanguage();
+
   useEffect(() => {
     Aos.init({ duration: 1000, once: true });
   }, []);
@@ -12,13 +15,11 @@ export default function Header() {
       <div className="header-left-side">
         <div className="header-big-text">
           <h1 className="im-jatin" data-aos="fade-up">
-            Hi, my name is Jatin Kalsi
+            {t.header.title}
           </h1>
           <div className="header-small-text">
             <p className="top-para" data-aos="fade-up" data-aos-delay="500">
-              I'm a university computer science student based in Canada. My aim
-              is to learn more about the world of software engineering and
-              development.
+              {t.header.description}
             </p>
           </div>
         </div>
