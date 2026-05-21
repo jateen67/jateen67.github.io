@@ -20,7 +20,7 @@ export default function Projects() {
               <img
                 className="actual-project-image"
                 src="opencourse.png"
-                alt="open course pic"
+                alt={p.classAvailability.alt}
               />
             </div>
             <div className="project-description project-description-blue">
@@ -92,7 +92,7 @@ export default function Projects() {
               <img
                 className="actual-project-image-2"
                 src="neuralnetwork.png"
-                alt="neural network pic"
+                alt={p.goodNews.alt}
               />
             </div>
           </div>
@@ -107,7 +107,7 @@ export default function Projects() {
               <img
                 className="actual-project-image"
                 src="microservice.png"
-                alt="microservice pic"
+                alt={p.distributed.alt}
               />
             </div>
             <div className="project-description project-description-blue">
@@ -179,7 +179,7 @@ export default function Projects() {
               <img
                 className="actual-project-image-2"
                 src="tspgif.gif"
-                alt="tsp visualizer pic"
+                alt={p.tsp.alt}
               />
             </div>
           </div>
@@ -194,7 +194,7 @@ export default function Projects() {
               <img
                 className="sim-gif"
                 src="physics.gif"
-                alt="physics sim pic"
+                alt={p.physics.alt}
               />
             </div>
             <div className="project-description project-description-blue">

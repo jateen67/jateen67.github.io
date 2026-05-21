@@ -8,6 +8,7 @@
   --shadow-color: rgba(0, 0, 0, 0.5);
   --nav-button-bg: transparent;
   --nav-button-hover-bg: rgba(255, 255, 255, 0.08);
+  --focus-ring: #4cb6ff;
 
   color: var(--text);
   background-color: var(--bg);
@@ -27,6 +28,7 @@
   --shadow-color: rgba(0, 0, 0, 0.15);
   --nav-button-bg: transparent;
   --nav-button-hover-bg: rgba(0, 0, 0, 0.06);
+  --focus-ring: #0078d4;
 }
 
 html,
@@ -52,11 +54,17 @@ svg {
   width: 3rem;
 }
 
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 header {
   background-color: var(--bg);
   position: sticky;
   top: 0rem;
-  z-index: 1;
+  z-index: 10;
   box-shadow: 0px 8px 8px -6px var(--shadow-color);
   transition: background-color 0.25s ease;
 }
@@ -67,11 +75,7 @@ header::after {
   clear: both;
 }
 
-nav {
-  float: right;
-}
-
-nav ul {
+nav.primary-nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -80,22 +84,27 @@ nav ul {
   gap: 2.5rem;
 }
 
-nav li {
+nav.primary-nav li {
   display: inline-block;
   padding-top: 1rem;
   padding-bottom: 1rem;
   position: relative;
 }
 
-nav a {
+button.nav-link {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
   color: var(--text);
-  text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
   font-size: 0.9rem;
+  position: relative;
 }
 
-nav a.nav-link::after {
+button.nav-link::after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -108,25 +117,21 @@ nav a.nav-link::after {
   width: 0;
 }
 
-nav a.nav-link:hover::after {
+button.nav-link:hover::after,
+button.nav-link.active::after {
   width: 100%;
   left: 0;
 }
 
-@media (max-width: 900px) {
-  nav ul {
-    gap: 1.25rem;
-  }
-  nav a {
-    font-size: 0.75rem;
-  }
+button.nav-link.active {
+  color: var(--accent-blue);
 }
 
-@media (max-width: 600px) {
-  nav ul {
-    gap: 0.75rem;
+@media (max-width: 900px) {
+  nav.primary-nav ul {
+    gap: 1.25rem;
   }
-  nav a {
-    font-size: 0.65rem;
+  button.nav-link {
+    font-size: 0.8rem;
   }
 }

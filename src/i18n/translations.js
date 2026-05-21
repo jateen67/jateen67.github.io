@@ -7,10 +7,14 @@ export const translations = {
       contact: "Contact",
       toggleTheme: "Toggle theme",
       toggleLanguage: "Switch to French",
+      openMenu: "Open menu",
+      closeMenu: "Close menu",
     },
     header: {
-      title: "Title",
-      description: "Description",
+      title: "Hi, I'm Jatin.",
+      description:
+        "I'm a software engineer based in Montreal.",
+      imageAlt: "Photo of the Montreal skyline at dusk",
     },
     tools: {
       heading: "Tools & Technologies",
@@ -62,22 +66,27 @@ export const translations = {
         classAvailability: {
           title: "Class Availability Notifier",
           description: "Sign up for SMS alerts when course seats open",
+          alt: "Screenshot of the Class Availability Notifier signup page",
         },
         goodNews: {
           title: "Good News Finder Neural Network",
           description: "AI model that aggregates good news online",
+          alt: "Diagram of a neural network used by the Good News Finder",
         },
         distributed: {
           title: "Distributed System",
           description: "Scalable app built with microservice architecture",
+          alt: "Architecture diagram of the distributed microservice system",
         },
         tsp: {
           title: "Travelling Salesman Problem Visualizer",
           description: "Visualize and learn about this infamous problem",
+          alt: "Animated visualization of the Travelling Salesman Problem solver",
         },
         physics: {
           title: "Physics Simulations",
           description: "Desktop application consisting of two physics simulations",
+          alt: "Animated physics simulation running in a desktop window",
         },
       },
     },
@@ -98,10 +107,14 @@ export const translations = {
       contact: "Contact",
       toggleTheme: "Changer le thème",
       toggleLanguage: "Switch to English",
+      openMenu: "Ouvrir le menu",
+      closeMenu: "Fermer le menu",
     },
     header: {
-      title: "Titre",
-      description: "Description",
+      title: "Salut, je suis Jatin.",
+      description:
+        "Je suis ingénieur logiciel basé à Montréal.",
+      imageAlt: "Photo de la skyline de Montréal au crépuscule",
     },
     tools: {
       heading: "Outils & Technologies",
@@ -153,22 +166,27 @@ export const translations = {
         classAvailability: {
           title: "Notificateur de disponibilité de cours",
           description: "Recevez des SMS lorsque des places de cours s'ouvrent",
+          alt: "Capture d'écran de la page d'inscription au notificateur",
         },
         goodNews: {
           title: "Réseau neuronal de bonnes nouvelles",
           description: "Modèle d'IA qui agrège les bonnes nouvelles en ligne",
+          alt: "Schéma du réseau neuronal utilisé par le projet",
         },
         distributed: {
           title: "Système distribué",
           description: "Application évolutive en architecture de microservices",
+          alt: "Schéma de l'architecture du système de microservices",
         },
         tsp: {
           title: "Visualiseur du problème du voyageur de commerce",
           description: "Visualisez et apprenez sur ce célèbre problème",
+          alt: "Animation du solveur du problème du voyageur de commerce",
         },
         physics: {
           title: "Simulations physiques",
           description: "Application de bureau comprenant deux simulations physiques",
+          alt: "Animation d'une simulation physique dans une fenêtre de bureau",
         },
       },
     },

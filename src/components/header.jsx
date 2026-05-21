@@ -39,7 +39,7 @@ export default function Header() {
           data-aos-delay="1000"
           className="montreal"
           src="montreal.jpg"
-          alt="montreal"
+          alt={t.header.imageAlt}
         />
       </div>
     </div>
