@@ -18,9 +18,9 @@ export const translations = {
     },
     tools: {
       heading: "Tools & Technologies",
-      programming: "Programming",
-      webDatabases: "Web & Databases",
-      frameworks: "Frameworks / Other",
+      languages: "Languages",
+      frameworks: "Frameworks",
+      other: "Other",
     },
     experience: {
       heading: "Experience",
@@ -118,9 +118,9 @@ export const translations = {
     },
     tools: {
       heading: "Outils & Technologies",
-      programming: "Programmation",
-      webDatabases: "Web & Bases de données",
-      frameworks: "Frameworks / Autres",
+      languages: "Langages",
+      frameworks: "Frameworks",
+      other: "Autres",
     },
     experience: {
       heading: "Expérience",
