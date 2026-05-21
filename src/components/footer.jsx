@@ -1,7 +1,27 @@
+import { useEffect, useRef, useState } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
+
+const EMAIL = "kalsijatin67@icloud.com";
 
 export default function Footer() {
   const { t } = useLanguage();
+  const [copied, setCopied] = useState(false);
+  const timerRef = useRef(null);
+
+  useEffect(() => {
+    return () => {
+      if (timerRef.current) clearTimeout(timerRef.current);
+    };
+  }, []);
+
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(EMAIL);
+      setCopied(true);
+      if (timerRef.current) clearTimeout(timerRef.current);
+      timerRef.current = setTimeout(() => setCopied(false), 2000);
+    } catch {}
+  };
 
   return (
     <div className="footer-container" id="contact">
@@ -28,13 +48,38 @@ export default function Footer() {
           >
             {t.footer.linkedin}
           </a>
-          <a
-            className="link"
-            target="_blank"
-            href="mailto:kalsijatin67@icloud.com"
-          >
-            {t.footer.email}
-          </a>
+          <div className="email-row">
+            <a
+              className="link"
+              target="_blank"
+              href={`mailto:${EMAIL}`}
+            >
+              {t.footer.email}
+            </a>
+            <button
+              type="button"
+              className="copy-email-btn"
+              onClick={copyEmail}
+              aria-label={t.footer.copyEmail}
+              title={t.footer.copyEmail}
+            >
+              {copied ? (
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12l5 5L20 7" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              ) : (
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="9" y="9" width="11" height="11" rx="2" fill="none" stroke="currentColor" strokeWidth="2" />
+                  <path d="M5 15V5a2 2 0 0 1 2-2h10" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              )}
+            </button>
+            {copied && (
+              <span className="copied-toast" role="status">
+                {t.footer.copied}
+              </span>
+            )}
+          </div>
           {/* <a
             className="link"
             target="_blank"

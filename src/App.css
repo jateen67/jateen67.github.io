@@ -404,7 +404,7 @@ nav.primary-nav li.nav-controls {
   margin-right: 45px;
 }
 
-span {
+.cta span {
   transform: skewX(15deg);
 }
 
@@ -964,5 +964,216 @@ span {
   }
   .project-title {
     font-size: 1.2rem;
+  }
+}
+
+.header-now {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.header-now-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #2ecc71;
+  box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7);
+  animation: pulse-dot 2s infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulse-dot {
+  0% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.6); }
+  70% { box-shadow: 0 0 0 8px rgba(46, 204, 113, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0); }
+}
+
+@media (max-width: 1000px) {
+  .header-now {
+    padding-left: 2rem;
+  }
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0.5rem;
+  opacity: 1;
+  transition: opacity 0.3s ease, color 0.2s ease;
+  animation: bounce-down 2s infinite;
+}
+
+.scroll-indicator:hover {
+  color: var(--accent-blue);
+}
+
+.scroll-indicator svg {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.scroll-indicator.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes bounce-down {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, 8px); }
+}
+
+@media (max-width: 690px) {
+  .scroll-indicator {
+    bottom: 1rem;
+  }
+  .scroll-indicator svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.experience-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tech-chip {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background-color: var(--nav-button-hover-bg);
+  color: var(--text);
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.experience-item .tech-chip {
+  border-color: rgba(0, 146, 255, 0.4);
+}
+
+.experience-item.alt .tech-chip {
+  border-color: rgba(98, 37, 230, 0.4);
+}
+
+.email-row {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.copy-email-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  padding: 0.25rem 0.4rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.copy-email-btn:hover {
+  color: var(--accent-blue);
+  border-color: var(--accent-blue);
+  background: var(--nav-button-hover-bg);
+}
+
+.copy-email-btn svg {
+  width: 14px;
+  height: 14px;
+  display: block;
+}
+
+.copied-toast {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--text);
+  color: var(--bg);
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent-blue);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.2s ease;
+  z-index: 20;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  background: var(--accent-purple);
+}
+
+.back-to-top svg {
+  width: 22px;
+  height: 22px;
+}
+
+@media (max-width: 600px) {
+  .back-to-top {
+    bottom: 1rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-now-dot,
+  .scroll-indicator {
+    animation: none;
+  }
+  .back-to-top,
+  .copy-email-btn,
+  .scroll-indicator {
+    transition: none;
+  }
+  html {
+    scroll-behavior: auto;
   }
 }

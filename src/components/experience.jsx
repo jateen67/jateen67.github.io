@@ -1,14 +1,7 @@
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Experience() {
   const { t } = useLanguage();
-
-  useEffect(() => {
-    Aos.init({ duration: 1000, once: true });
-  }, []);
 
   return (
     <div className="experience-container" id="experience">
@@ -43,6 +36,15 @@ export default function Experience() {
                   <li key={j}>{b}</li>
                 ))}
               </ul>
+              {item.tech && item.tech.length > 0 && (
+                <div className="experience-tech" aria-label="Tech stack">
+                  {item.tech.map((techName) => (
+                    <span key={techName} className="tech-chip">
+                      {techName}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
           );
         })}

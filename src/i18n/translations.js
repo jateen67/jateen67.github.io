@@ -15,6 +15,8 @@ export const translations = {
       description:
         "I'm a software engineer based in Montreal.",
       imageAlt: "Photo of the Montreal skyline at dusk",
+      currently: "Currently @ Smartbills Technologies",
+      scrollHint: "Scroll to experience",
     },
     tools: {
       heading: "Tools & Technologies",
@@ -34,6 +36,7 @@ export const translations = {
             "Developed Dockerized fintech microservices in React.js, React Native, TypeScript, and .NET, introduced Stripe subscriptions, and reduced provisioning times by integrating Terraform with CI/CD pipelines to automate infrastructure deployments",
             "Architected a decoupled event-driven receipt processing pipeline using AWS Textract, EventBridge, SQS, SNS, and ECS to ingest receipts forwarded by email and extract structured data via OCR, reducing manual uploads by 70%",
           ],
+          tech: ["React.js", "React Native", "TypeScript", ".NET", "Docker", "Terraform", "AWS"],
         },
         {
           role: "Software Developer Intern",
@@ -43,6 +46,7 @@ export const translations = {
             "Built a form processing tool using React.js, TypeScript, and .NET, streamlining metadata reporting and reducing weekly manual workloads by 10+ hours across the internal engineering department",
             "Developed a REST API with a custom advanced search engine used by 800+ users to give them over 5x faster searching capabilities on large datasets and integrated unit testing with Jest to maintain over 95% code coverage",
           ],
+          tech: ["React.js", "TypeScript", ".NET", "Jest"],
         },
         {
           role: "Software Engineer Intern",
@@ -51,6 +55,7 @@ export const translations = {
           bullets: [
             "Reduced page load times by optimizing SQL queries, introducing Redis caching in the .NET backend, and modernizing React.js components, significantly improving the user experience for 55,000+ users",
           ],
+          tech: ["React.js", ".NET", "SQL", "Redis"],
         },
       ],
     },
@@ -94,6 +99,11 @@ export const translations = {
       github: "GitHub",
       linkedin: "LinkedIn",
       email: "Email",
+      copyEmail: "Copy email address",
+      copied: "Copied!",
+    },
+    misc: {
+      backToTop: "Back to top",
     },
   },
   fr: {
@@ -112,6 +122,8 @@ export const translations = {
       description:
         "Je suis ingénieur logiciel basé à Montréal.",
       imageAlt: "Photo de la skyline de Montréal au crépuscule",
+      currently: "Actuellement @ Smartbills Technologies",
+      scrollHint: "Faire défiler vers l'expérience",
     },
     tools: {
       heading: "Outils & Technologies",
@@ -131,6 +143,7 @@ export const translations = {
             "Développé des microservices fintech conteneurisés avec Docker en React.js, React Native, TypeScript et .NET, intégré les abonnements Stripe, et réduit les temps de provisionnement en intégrant Terraform aux pipelines CI/CD pour automatiser les déploiements d'infrastructure",
             "Architecturé un pipeline découplé et piloté par événements pour le traitement de reçus à l'aide d'AWS Textract, EventBridge, SQS, SNS et ECS afin d'ingérer les reçus transférés par courriel et d'extraire les données structurées par OCR, réduisant les téléversements manuels de 70 %",
           ],
+          tech: ["React.js", "React Native", "TypeScript", ".NET", "Docker", "Terraform", "AWS"],
         },
         {
           role: "Stagiaire en développement logiciel",
@@ -140,6 +153,7 @@ export const translations = {
             "Conçu un outil de traitement de formulaires en React.js, TypeScript et .NET, simplifiant le rapport de métadonnées et réduisant la charge de travail manuelle hebdomadaire de plus de 10 heures au sein du département d'ingénierie interne",
             "Développé une API REST dotée d'un moteur de recherche avancé personnalisé, utilisée par plus de 800 utilisateurs pour effectuer des recherches plus de 5 fois plus rapides sur de grands ensembles de données, et intégré des tests unitaires avec Jest afin de maintenir une couverture de code supérieure à 95 %",
           ],
+          tech: ["React.js", "TypeScript", ".NET", "Jest"],
         },
         {
           role: "Stagiaire en génie logiciel",
@@ -148,6 +162,7 @@ export const translations = {
           bullets: [
             "Réduit les temps de chargement des pages en optimisant les requêtes SQL, en introduisant la mise en cache Redis dans le backend .NET et en modernisant des composants React.js, améliorant significativement l'expérience utilisateur pour plus de 55 000 utilisateurs",
           ],
+          tech: ["React.js", ".NET", "SQL", "Redis"],
         },
       ],
     },
@@ -191,6 +206,11 @@ export const translations = {
       github: "GitHub",
       linkedin: "LinkedIn",
       email: "Courriel",
+      copyEmail: "Copier l'adresse courriel",
+      copied: "Copié !",
+    },
+    misc: {
+      backToTop: "Retour en haut",
     },
   },
 };

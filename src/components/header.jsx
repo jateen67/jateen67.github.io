@@ -1,14 +1,20 @@
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Header() {
   const { t } = useLanguage();
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    Aos.init({ duration: 1000, once: true });
+    const onScroll = () => setScrolled(window.scrollY > 120);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const scrollToExperience = () => {
+    const el = document.getElementById("experience");
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   return (
     <div className="header-container">
@@ -20,6 +26,10 @@ export default function Header() {
           <div className="header-small-text">
             <p className="top-para" data-aos="fade-up" data-aos-delay="500">
               {t.header.description}
+            </p>
+            <p className="header-now" data-aos="fade-up" data-aos-delay="700">
+              <span className="header-now-dot" aria-hidden="true" />
+              {t.header.currently}
             </p>
           </div>
         </div>
@@ -42,6 +52,17 @@ export default function Header() {
           alt={t.header.imageAlt}
         />
       </div>
+      <button
+        type="button"
+        className={`scroll-indicator${scrolled ? " hidden" : ""}`}
+        onClick={scrollToExperience}
+        aria-label={t.header.scrollHint}
+        title={t.header.scrollHint}
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      </button>
     </div>
   );
 }

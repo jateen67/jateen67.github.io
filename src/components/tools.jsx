@@ -1,6 +1,3 @@
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 
 const Icons = {
@@ -242,10 +239,6 @@ const CATEGORIES = [
 
 export default function Tools() {
   const { t } = useLanguage();
-
-  useEffect(() => {
-    Aos.init({ duration: 1000, once: true });
-  }, []);
 
   return (
     <div className="tools-container" id="tools">
