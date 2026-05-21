@@ -94,7 +94,7 @@ export const translations = {
     },
     footer: {
       interested: "Interested in connecting?",
-      findInfo: "Find my information below!",
+      findInfo: "Find my info below!",
       links: "Links",
       github: "GitHub",
       linkedin: "LinkedIn",
