@@ -113,15 +113,17 @@ export default function Navbar() {
                   </svg>
                 )}
               </button>
-              <button
+              {/*
+                <button
                 type="button"
                 className="nav-icon-btn"
                 onClick={toggleLanguage}
                 aria-label={t.nav.toggleLanguage}
                 title={t.nav.toggleLanguage}
-              >
-                {language.toUpperCase()}
-              </button>
+                >
+                  {language.toUpperCase()}
+                </button>
+              */}
             </li>
           </ul>
         </nav>
