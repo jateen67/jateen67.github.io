@@ -53,9 +53,9 @@ export const translations = {
           company: "Ivalua Inc.",
           dates: "Dec 2022 - May 2023",
           bullets: [
-            "Reduced page load times by optimizing SQL queries, introducing Redis caching in the .NET backend, and modernizing React.js components, significantly improving the user experience for 55,000+ users",
+            "Reduced page load times by optimizing SQL queries and introducing Elasticsearch in the .NET backend, improving performance and user experience for 55,000+ users",
           ],
-          tech: ["React.js", ".NET", "SQL", "Redis"],
+          tech: [".NET", "SQL"],
         },
       ],
     },
@@ -160,9 +160,9 @@ export const translations = {
           company: "Ivalua Inc.",
           dates: "Déc. 2022 – Mai 2023",
           bullets: [
-            "Réduit les temps de chargement des pages en optimisant les requêtes SQL, en introduisant la mise en cache Redis dans le backend .NET et en modernisant des composants React.js, améliorant significativement l'expérience utilisateur pour plus de 55 000 utilisateurs",
+            "..."
           ],
-          tech: ["React.js", ".NET", "SQL", "Redis"],
+          tech: [".NET", "SQL"],
         },
       ],
     },
