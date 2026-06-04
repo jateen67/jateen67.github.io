@@ -36,7 +36,7 @@ export const translations = {
             "Developed Dockerized fintech microservices in React.js, React Native, TypeScript, and .NET, introduced Stripe subscriptions, and reduced provisioning times by integrating Terraform with CI/CD pipelines to automate infrastructure deployments",
             "Architected a decoupled event-driven receipt processing pipeline using AWS Textract, EventBridge, SQS, SNS, and ECS to ingest receipts forwarded by email and extract structured data via OCR, reducing manual uploads by 70%",
           ],
-          tech: ["React.js", "React Native", "TypeScript", ".NET", "Docker", "Terraform", "AWS"],
+          tech: ["React.js", "React Native", "TypeScript", ".NET", "SQL", "Docker", "Terraform", "AWS"],
         },
         {
           role: "Software Developer Intern",
@@ -46,7 +46,7 @@ export const translations = {
             "Built a form processing tool using React.js, TypeScript, and .NET, streamlining metadata reporting and reducing weekly manual workloads by 10+ hours across the internal engineering department",
             "Developed a REST API with a custom advanced search engine used by 800+ users to give them over 5x faster searching capabilities on large datasets and integrated unit testing with Jest to maintain over 95% code coverage",
           ],
-          tech: ["React.js", "TypeScript", ".NET", "Jest"],
+          tech: ["React.js", "TypeScript", ".NET", "SQL"],
         },
         {
           role: "Software Engineer Intern",
@@ -143,7 +143,7 @@ export const translations = {
             "Développé des microservices fintech conteneurisés avec Docker en React.js, React Native, TypeScript et .NET, intégré les abonnements Stripe, et réduit les temps de provisionnement en intégrant Terraform aux pipelines CI/CD pour automatiser les déploiements d'infrastructure",
             "Architecturé un pipeline découplé et piloté par événements pour le traitement de reçus à l'aide d'AWS Textract, EventBridge, SQS, SNS et ECS afin d'ingérer les reçus transférés par courriel et d'extraire les données structurées par OCR, réduisant les téléversements manuels de 70 %",
           ],
-          tech: ["React.js", "React Native", "TypeScript", ".NET", "Docker", "Terraform", "AWS"],
+          tech: ["React.js", "React Native", "TypeScript", ".NET", "SQL", "Docker", "Terraform", "AWS"],
         },
         {
           role: "Stagiaire en développement logiciel",
@@ -153,7 +153,7 @@ export const translations = {
             "Conçu un outil de traitement de formulaires en React.js, TypeScript et .NET, simplifiant le rapport de métadonnées et réduisant la charge de travail manuelle hebdomadaire de plus de 10 heures au sein du département d'ingénierie interne",
             "Développé une API REST dotée d'un moteur de recherche avancé personnalisé, utilisée par plus de 800 utilisateurs pour effectuer des recherches plus de 5 fois plus rapides sur de grands ensembles de données, et intégré des tests unitaires avec Jest afin de maintenir une couverture de code supérieure à 95 %",
           ],
-          tech: ["React.js", "TypeScript", ".NET", "Jest"],
+          tech: ["React.js", "TypeScript", ".NET", "SQL"],
         },
         {
           role: "Stagiaire en génie logiciel",
