@@ -27,10 +27,10 @@ export default function Header() {
             <p className="top-para" data-aos="fade-up" data-aos-delay="500">
               {t.header.description}
             </p>
-            <p className="header-now" data-aos="fade-up" data-aos-delay="700">
+            {/* <p className="header-now" data-aos="fade-up" data-aos-delay="700">
               <span className="header-now-dot" aria-hidden="true" />
               {t.header.currently}
-            </p>
+            </p> */}
           </div>
         </div>
         {/* <div className="header-button-area">

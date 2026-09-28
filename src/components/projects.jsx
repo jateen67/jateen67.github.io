@@ -192,9 +192,9 @@ export default function Projects() {
               data-aos-delay="500"
             >
               <img
-                className="sim-gif"
-                src="physics.gif"
-                alt={p.physics.alt}
+                className="database-pic"
+                src="database.png"
+                alt={p.database.alt}
               />
             </div>
             <div className="project-description project-description-blue">
@@ -203,19 +203,19 @@ export default function Projects() {
                 data-aos="fade-left"
                 data-aos-delay="600"
               >
-                {p.physics.title}
+                {p.database.title}
               </h2>
               <div
                 className="project-text"
                 data-aos="fade-left"
                 data-aos-delay="700"
               >
-                {p.physics.description}
+                {p.database.description}
               </div>
               <div className="project-buttons">
                 <a
                   className="cta cta2"
-                  href="https://github.com/jateen67/vanierintegrativeproject"
+                  href="https://github.com/jateen67/kv"
                   target="_blank"
                 >
                   <span>{t.projects.code}</span>

@@ -31,31 +31,41 @@ export const translations = {
         {
           role: "Software Developer Intern",
           company: "Smartbills Technologies Inc.",
-          dates: "May 2025 - Present",
+          dates: "Jan 2026 - Aug 2026",
           bullets: [
-            "Developed Dockerized fintech microservices in React.js, React Native, TypeScript, and .NET, introduced Stripe subscriptions, and reduced provisioning times by integrating Terraform with CI/CD pipelines to automate infrastructure deployments",
-            "Architected a decoupled event-driven receipt processing pipeline using AWS Textract, EventBridge, SQS, SNS, and ECS to ingest receipts forwarded by email and extract structured data via OCR, reducing manual uploads by 70%",
+            "Architected a decoupled, event-driven receipt processing pipeline using AWS Textract, EventBridge, SQS, ECS, and S3 to ingest receipts forwarded by email and extract structured data via OCR, reducing manual uploads by 70%",
+            "Developed React.js and React Native components as well as 25+ controllers in the C# and .NET backend, all while building an Outlook extension used by 90% of users that detects email attachments and enables users to upload them directly to the platform"
           ],
-          tech: ["React.js", "React Native", "TypeScript", ".NET", "SQL", "Docker", "Terraform", "AWS"],
+          tech: ["React.js", "React Native", "TypeScript", "C#", ".NET", "SQL", "Docker", "Terraform", "AWS"],
+        },
+        {
+          role: "Software Developer Intern",
+          company: "Smartbills Technologies Inc.",
+          dates: "May 2025 - Aug 2025",
+          bullets: [
+            "Developed 6+ Dockerized fintech microservices in a startup environment using React.js, React Native, TypeScript, C#, .NET, and SSMS, all while reducing provisioning times by integrating Terraform with CI/CD pipelines to automate infrastructure deployments",
+            "Designed and built a Stripe payment system with AWS SQS for asynchronous webhook processing, as well as cache-based idempotency to guarantee 100% transaction reliability and eliminate duplicate billing errors across all client lifecycles"
+          ],
+          tech: ["React.js", "React Native", "TypeScript", "C#", ".NET", "SQL", "Docker", "Terraform", "AWS"],
         },
         {
           role: "Software Developer Intern",
           company: "CAE Inc.",
           dates: "May 2024 - Aug 2024",
           bullets: [
-            "Built a form processing tool using React.js, TypeScript, and .NET, streamlining metadata reporting and reducing weekly manual workloads by 10+ hours across the internal engineering department",
-            "Developed a REST API with a custom advanced search engine used by 800+ users to give them over 5x faster searching capabilities on large datasets and integrated unit testing with Jest to maintain over 95% code coverage",
+            "Built an internal form processing tool using JavaScript, C#, .NET, and SSMS, streamlining metadata reporting and reducing weekly manual workloads for 800+ users across the engineering department",
+            "Developed REST APIs with a custom advanced search engine to give users over 5x faster searching capabilities on large datasets and wrote unit tests with Jest to maintain over 95% code coverage"
           ],
-          tech: ["React.js", "TypeScript", ".NET", "SQL"],
+          tech: ["JavaScript", "C#", ".NET", "SQL"],
         },
         {
           role: "Software Engineer Intern",
           company: "Ivalua Inc.",
           dates: "Dec 2022 - May 2023",
           bullets: [
-            "Reduced page load times by optimizing SQL queries and introducing Elasticsearch in the .NET backend, improving performance and user experience for 55,000+ users",
+            "Reduced page load times by up to 80% by optimizing SQL queries in SSMS and introducing Elasticsearch in the C# and .NET backend to improve performance for 55,000+ users, all while leading weekly calls with 4+ enterprise-level clients"
           ],
-          tech: [".NET", "SQL"],
+          tech: ["C#", ".NET", "SQL"],
         },
       ],
     },
@@ -85,10 +95,10 @@ export const translations = {
           description: "Visualize and learn about this infamous problem",
           alt: "Animated visualization of the Travelling Salesman Problem solver",
         },
-        physics: {
-          title: "Physics Simulations",
-          description: "Desktop application consisting of two physics simulations",
-          alt: "Animated physics simulation running in a desktop window",
+        database: {
+          title: "Distributed Key-Value Store",
+          description: "Database inspired by Apache Cassandra",
+          alt: "Architecture diagram of the distributed key-value store",
         },
       },
     },

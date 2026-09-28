@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 
-const EMAIL = "kalsijatin67@icloud.com";
+const EMAIL = "kalsijatin0@gmail.com";
 
 export default function Footer() {
   const { t } = useLanguage();

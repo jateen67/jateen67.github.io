@@ -784,7 +784,7 @@ nav.primary-nav li.nav-controls {
     width: 20rem;
   }
 
-  .sim-gif {
+  .database-pic {
     width: 20rem;
     height: 226px;
   }
@@ -835,7 +835,7 @@ nav.primary-nav li.nav-controls {
   }
 }
 
-.sim-gif {
+.database-pic {
   height: 282.5px;
   box-shadow: -40px 50px 0 var(--accent-purple);
 }
@@ -889,7 +889,7 @@ nav.primary-nav li.nav-controls {
 }
 
 @media (max-width: 1050px) {
-  .sim-gif {
+  .database-pic {
     width: 20rem;
     height: 226px;
   }
@@ -946,7 +946,7 @@ nav.primary-nav li.nav-controls {
   .project-text {
     font-size: 0.8rem;
   }
-  .sim-gif {
+  .database-pic {
     width: 17rem;
     height: 192.1px;
     box-shadow: -20px 30px 0 var(--accent-purple);
